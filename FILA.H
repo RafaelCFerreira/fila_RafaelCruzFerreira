@@ -56,10 +56,10 @@ void enqueue(struct sfila *f, elemento v){
 //retira um elemento da fila
 elemento dequeue(struct sfila *f){
   elemento v;
-  if (qisEmpty(f)){
-    printf("Fila vazia.\n");
-    exit(1); // aborta programa
-  }
+  // if (qisEmpty(f)){
+  //   printf("Fila vazia.\n");
+  //   exit(1); // aborta programa
+  // }
   v = f->vetor[f->inicio];
   f->total--;
   f->inicio++; //simula a circularidade
